@@ -69,7 +69,6 @@ router.patch('/:id', auth , async (req,res)=>{
   // {
   //     description : "new description",
   //     completed: true,
-  //     owner : "asfasfasfasfasf"
   // }
   const allowedUpdates = ['description', 'completed'];
   const isValidOperation = updates.every(update => allowedUpdates.includes(update));
